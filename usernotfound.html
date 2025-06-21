@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--This is usernotfound.html-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Not Found</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', 'Poppins', cursive;
+      background: linear-gradient(135deg, #ffe6f0, #dce7ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 4px 20px rgba(255, 182, 193, 0.4);
+      text-align: center;
+      padding: 3rem;
+      max-width: 400px;
+      position: relative;
+    }
+
+    .card::before {
+      content: "✨";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 2rem;
+      animation: sparkle 1.5s infinite alternate;
+    }
+
+    @keyframes sparkle {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(15deg); }
+    }
+
+    h1 {
+      color: #ff69b4;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #555;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #ff85b3;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #e06c9f;
+    }
+  </style>
+   
+
+</head>
+<body>
+  <div class="card">
+    <h1>Oops!</h1>
+    <p>User not found in our system 💔</p>
+    <a href="login.html" class="button">Try Again</a>
+  </div>
+</body>
+</html>

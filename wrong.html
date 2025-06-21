@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--This is wrong.html-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wrong Password</title>
+  <style>
+    :root {
+  --pink-light: #ffe6f0;
+  --blue-light: #dce7ff;
+  --pink-main: #ff69b4;
+  --button-bg: #ff85b3;
+  --button-hover: #e06c9f;
+  --text-color: #555;
+  --success-color: #34a853;
+  --error-color: #d93025;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', 'Poppins', cursive;
+  background: linear-gradient(135deg, var(--pink-light), var(--blue-light));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 4px 20px rgba(255, 182, 193, 0.4);
+  text-align: center;
+  padding: 3rem;
+  max-width: 400px;
+  position: relative;
+}
+
+.card::before {
+  content: "✨";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 2rem;
+  animation: sparkle 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes sparkle {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(15deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+h1 {
+  color: var(--pink-main);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+a.button {
+  display: inline-block;
+  background-color: var(--button-bg);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+  background-color: var(--button-hover);
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Oops!</h1>
+    <p role="alert">Wrong password! ❌</p>
+
+    <a href="login.html" class="button">Try Again</a>
+  </div>
+ 
+  
+
+</body>
+</html>

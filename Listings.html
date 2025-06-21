@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--This is listings.html-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>All Listings</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive;
+      background: linear-gradient(to bottom, #ffc0cb, #add8e6);
+      padding: 2rem;
+    }
+    h2 {
+      text-align: center;
+      color: #4b0082;
+    }
+    .listing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #f0a;
+      border: 2px solid #ff69b4;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      color: #ff1493;
+    }
+    .card p {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>Lost and Found Listings</h2>
+  <div class="listing-grid">
+    <div class="card">
+      <img src="item1.jpg" alt="Item" />
+      <h3>Lost: Umbrella</h3>
+      <p>Left in library on 25th April.</p>
+    </div>
+    <div class="card">
+      <img src="item2.jpg" alt="Item" />
+      <h3>Found: Water Bottle</h3>
+      <p>Blue bottle found near lab block.</p>
+    </div>
+    <!-- Dynamically render more cards using PHP -->
+  </div>
+</body>
+</html>
