@@ -2,7 +2,7 @@
 
 A web platform where users can report, find, and recover lost or found items within a community. Built as a BCA final-year project using HTML, CSS, JavaScript, PHP, and MySQL.
 
----
+
 
 ## ✅ Features
 
@@ -14,7 +14,7 @@ A web platform where users can report, find, and recover lost or found items wit
 - Responsive design for mobile and desktop  
 - Contact form for queries or support  
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -23,7 +23,6 @@ A web platform where users can report, find, and recover lost or found items wit
 - **Database**: MySQL  
 - **Development Tool**: XAMPP (Apache + MySQL)
 
----
 
 ## 📁 Folder Structure
 
@@ -41,7 +40,7 @@ lost-and-found/
 │ └── connection.php
 └── lost_found.sql (database file)
 
----
+
 
 ## ⚙️ How to Run the Project (Locally)
 
